@@ -1,0 +1,37 @@
+<!--step02_selector2.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector2</title>
+    <style>
+        .container {
+            background-color: beige;
+        }
+        .container ~ p {
+            background-color: red;
+        }
+        /* .container p    =>클래스 container의 자손 중에서 'p'요소 선택.  */
+        /* .container > p  =>클래스 container의 자식 중에서 'p'요소 선택.  */
+        /* .container + p  =>클래스 container의 형제 중에서 바로 인접한 'p'요소 선택.  */
+        /* .container ~ p  =>클래스 container의 형제 중에서 모든 'p'요소 선택.  */
+        /* 네 가지 모두 해보자. 보고 읽을 줄은 알아야 해 !! */
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <p>I am student</p>
+        <div>
+            <p>I am student</p>
+        </div>
+    </div>
+    <p>I am student</p>
+    <p>I am student</p>
+    <p>I am student</p>
+    <p>I am student</p>
+
+</body>
+</html>
